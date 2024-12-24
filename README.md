@@ -67,7 +67,7 @@ src/
 ├── index.js
 
 - Global styles
-- 
+
 ├── App.css
 
 - Default React index styles
