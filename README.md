@@ -1,8 +1,11 @@
 React Meals Project Documentation
-
 Overview
-The React Meals project is a dynamic web application that allows users to browse a selection of meals, view detailed descriptions, and add items to a cart. It demonstrates core React features such as component-based development, state management, and interaction handling.
+The React Meals project is a dynamic web application that allows users to:
 
+Browse a selection of meals.
+View detailed descriptions.
+Add items to a cart.
+It demonstrates core React features such as component-based development, state management, and interaction handling.
 Features
 Meal Listings: Displays a list of available meals with descriptions and prices.
 Add to Cart: Allows users to add items to the cart.
@@ -10,7 +13,6 @@ Cart Management: Provides an interface for viewing and managing the items in the
 Responsive Design: Optimized for both desktop and mobile devices.
 
 Project Setup
-
 Prerequisites
 Ensure you have the following installed:
 
@@ -19,23 +21,23 @@ npm (v6 or higher) or Yarn
 Installation
 Clone the repository:
 bash
-
+ 
 git clone git@github.com:KundanDG52/React-meals.git
 Navigate to the project directory:
 bash
-
+ 
 cd React-meals
 Install dependencies:
 bash
-
+ 
 npm install
 Start the development server:
 bash
-
+ 
 npm start
 File Structure
-bash
-
+plaintext
+ 
 src/
 │
 ├── components/
@@ -60,58 +62,63 @@ name (string): The meal's name.
 description (string): The meal's description.
 price (number): The meal's price.
 
-2. Cart
+3. Cart
 Location: src/components/Cart/Cart.js
 Description: Handles cart items and total price calculations.
 Features:
 Displays added items with quantity and total cost.
 Allows users to remove items or adjust quantities.
 
-3. Header
-Location: src/components/Layout/Header.js
-Description: The main navigation bar with a cart button.
-State Management
-The project uses React Context API for managing the cart's state, ensuring that the cart's data is accessible across the application.
+5. Header
+1) Location: src/components/Layout/Header.js
+2) Description: The main navigation bar with a cart button.
+3) State Management
+4) The project uses React Context API to manage the cart's state, ensuring that the cart's data is accessible across the application.
 
 CartProvider: Wraps the application and provides cart-related state and actions.
 Actions:
-addItem: Adds an item to the cart.
-removeItem: Removes an item from the cart.
-
+1. addItem: Adds an item to the cart.
+2. removeItem: Removes an item from the cart.
 Styling
-CSS modules are used for scoped styling.
-Global styles are applied via App.css.
+1. CSS modules are used for scoped styling.
+2. Global styles are applied via App.css.
+
 Running Tests
 To run unit tests (if included):
 
 bash
+ 
 npm test
 Build for Production
 To create a production build:
 
 bash
+ 
 npm run build
 This will generate an optimized build in the /build folder.
 
 Deployment
-You can deploy the app using services like Netlify, Vercel, or GitHub Pages. To deploy on GitHub Pages:
+You can deploy the app using services like Netlify, Vercel, or GitHub Pages.
 
+Steps for GitHub Pages Deployment
 Install the GitHub Pages package:
 bash
+ 
 npm install gh-pages
 Add the following to your package.json:
 json
-
+ 
 "homepage": "https://<username>.github.io/<repository-name>",
 "scripts": {
   "predeploy": "npm run build",
   "deploy": "gh-pages -d build"
 }
-
 Deploy:
 bash
+ 
 npm run deploy
-Potential Enhancements
-Add user authentication for personalized cart management.
-Implement backend integration for fetching meals and managing orders.
-Add a search and filter feature to browse meals easily.
+
+Potential Enhancements:
+1. Add user authentication for personalized cart management.
+2. Implement backend integration for fetching meals and managing orders.
+3. Add a search and filter feature to browse meals easily.
