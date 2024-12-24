@@ -37,16 +37,25 @@ cd React-meals
 src/
 │
 ├── components/
-│   ├── Cart/    ## Components related to the shopping cart
-│   ├── Meals/   ## Components displaying the list of meals
-│   ├── UI/    ## Generic UI components like Card, Modal
-│   └── Layout/ ## Main layout components like Header
-├── store/    ## Context API for managing global state
+- Components related to the shopping cart
+│   ├── Cart/    
+- Components displaying the list of meals
+│   ├── Meals/
+- Generic UI components like Card, Modal
+│   ├── UI/
+- Main layout components like Header
+│   └── Layout/
+- Context API for managing global state
+├── store/    
 │
-├── App.js    ## Main application component
-├── index.js  ## Entry point for React
-├── App.css   ## Global styles
-└── index.css ## Default React index styles
+- Main application component
+├── App.js
+- Entry point for React
+├── index.js
+- Global styles
+├── App.css
+- Default React index styles
+└── index.css
 
 ## Key Components
 #### 1. MealItem
@@ -104,7 +113,7 @@ Add the following to your package.json:
   "deploy": "gh-pages -d build"
 }
 
-Deploy:
+## Deploy:
 npm run deploy
 
 ## Potential Enhancements:
