@@ -60,36 +60,37 @@ src/
 └── index.css
 
 ## Key Components
-1. MealItem
+#### 1. MealItem
 - Location: src/components/Meals/MealItem.js
 - Description: Displays individual meal information, including name, description, and price.
 
-2. Props:
+#### 2. Props:
  - name (string): The meal's name.
  - description (string): The meal's description.
  - price (number): The meal's price.
 
-3. Cart
+#### 3. Cart
  - Location: src/components/Cart/Cart.js
  - Description: Handles cart items and total price calculations.
 
-4. Features:
+#### 4. Features:
  - Displays added items with quantity and total cost.
  - Allows users to remove items or adjust quantities.
 
-5. Header
+#### 5. Header
  - Location: src/components/Layout/Header.js
  - Description: The main navigation bar with a cart button.
  - State Management
  - The project uses React Context API to manage the cart's state, ensuring that the cart's data is accessible across the application.
 
 CartProvider: Wraps the application and provides cart-related state and actions.
-=> Actions:
-1. addItem: Adds an item to the cart.
-2. removeItem: Removes an item from the cart.
-=> Styling:
-1. CSS modules are used for scoped styling.
-2. Global styles are applied via App.css.
+#### 1. Actions:
+ - addItem: Adds an item to the cart.
+ - removeItem: Removes an item from the cart.
+
+#### 2. Styling:
+ - CSS modules are used for scoped styling.
+ - Global styles are applied via App.css.
 
 ## Running Tests
 To run unit tests (if included):
@@ -113,10 +114,11 @@ Add the following to your package.json:
   "predeploy": "npm run build",
   "deploy": "gh-pages -d build"
 }
+
 Deploy:
 npm run deploy
 
 ## Potential Enhancements:
-1. Add user authentication for personalized cart management.
-2. Implement backend integration for fetching meals and managing orders.
-3. Add a search and filter feature to browse meals easily.
+ - Add user authentication for personalized cart management.
+ - Implement backend integration for fetching meals and managing orders.
+ - Add a search and filter feature to browse meals easily.
