@@ -37,27 +37,16 @@ cd React-meals
 src/
 │
 ├── components/
-
-### Components related to the shopping cart
-│   ├── Cart/        
-### Components displaying the list of meals
-│   ├── Meals/      
-### Generic UI components like Card, Modal
-│   ├── UI/    
-### Main layout components like Header
-│   └── Layout/    
-
-### Context API for managing global state
-├── store/    
+│   ├── Cart/    ## Components related to the shopping cart
+│   ├── Meals/   ## Components displaying the list of meals
+│   ├── UI/    ## Generic UI components like Card, Modal
+│   └── Layout/ ## Main layout components like Header
+├── store/    ## Context API for managing global state
 │
-### Main application component
-├── App.js    
-### Entry point for React
-├── index.js    
-### Global styles
-├── App.css   
-## Default React index styles
-└── index.css
+├── App.js    ## Main application component
+├── index.js  ## Entry point for React
+├── App.css   ## Global styles
+└── index.css ## Default React index styles
 
 ## Key Components
 #### 1. MealItem
