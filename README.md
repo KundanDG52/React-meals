@@ -38,23 +38,40 @@ src/
 │
 ├── components/
 - Components related to the shopping cart
-│   ├── Cart/    
+
+│   ├── Cart/
+    
 - Components displaying the list of meals
+
 │   ├── Meals/
+
 - Generic UI components like Card, Modal
+
 │   ├── UI/
+
 - Main layout components like Header
+
 │   └── Layout/
+
 - Context API for managing global state
+
 ├── store/    
+
 │
 - Main application component
+
 ├── App.js
+
 - Entry point for React
+
 ├── index.js
+
 - Global styles
+- 
 ├── App.css
+
 - Default React index styles
+
 └── index.css
 
 ## Key Components
